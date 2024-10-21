@@ -8,10 +8,12 @@ import tvseriesRoutes from "./routes/tv_routes.js"
 import {protectedRoute}  from './middleware/protectedroute.js';
 import cookieParser from 'cookie-parser';
 import SearchRoutes from "./routes/search_routes.js"
+import cors from "cors"
 import path from "path"
 
 
 const app=express();
+app.use(cors());
 
 const PORT=ENV_VARS.PORT
 const __dirname=path.resolve();
