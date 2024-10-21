@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-
-
 import Homepge from './pages/home/Homepge'
 import Signuppage from './pages/Signuppage'
 import Loginpage from './pages/Loginpage'
@@ -22,6 +20,8 @@ import NotFoundPage from './pages/NotFoundPage'
 function App() {
  
 const {user, isCheckingAuth,authCheck}=useAuthStore()
+
+
 
 
 useEffect(()=>{
